@@ -4,5 +4,93 @@
     <meta charset="UTF-8" />
     <title>Страница каталога</title>
   </head>
-  <body></body>
+  <body>
+    <header class="main-header">
+      <img class="header-logo" width="140" height="70" alt="иконка седона" />
+      <nav class="main-nav">
+        <ul class="nav-list site-list">
+          <li class="site-item">
+            <a class="site-link" href="index.html">Главная</a>
+          </li>
+          <li class="site-item"><a class="site-link" href="#">О седоне</a></li>
+          <li class="site-item">
+            <a class="site-link">Гостиницы</a>
+          </li>
+        </ul>
+        <ul class="nav-list user-list">
+          <li class="user-item">
+            <a class="user-link" href="#"
+              ><span class="visually-hidden">найти гостиницу</span></a
+            >
+          </li>
+          <li class="user-item">
+            <a class="user-link" href="#"
+              ><span class="visually-hidden">избранное</span></a
+            >
+          </li>
+          <li class="user-item">
+            <a class="user-link button" href="#">Хочу сюда!</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-container">
+      <section class="filter">
+        <h1 class="catalog-title">Гостиницы Седоны</h1>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="index.html"
+              ><span class="visually-hidden">Вернуться домой</span></a
+            >
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link">Гостиницы</a>
+          </li>
+        </ul>
+        <div class="filter-fields">
+          <fieldset class="filter-field">
+            <legend class="field-title">Инфраструктура:</legend>
+            <ul class="field-list">
+              <li class="field-item">
+                <label class="field-label">
+                  <input
+                    class="visually-hidden"
+                    type="checkbox"
+                    name="swimming-pool"
+                  />
+                  Бассейн
+                </label>
+              </li>
+              <li class="field-item">
+                <label class="field-label">
+                  <input
+                    class="visually-hidden"
+                    type="checkbox"
+                    name="parking"
+                  />
+                  Парковка
+                </label>
+              </li>
+              <li class="field-item">
+                <label class="field-label">
+                  <input class="visually-hidden" type="checkbox" name="wi-fi" />
+                  Wi-Fi
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="filter-field">
+            <legend class="field-title">Тип жилья:</legend>
+            <ul class="field-list">
+              <li class="field-item"></li>
+              <li class="field-item"></li>
+              <li class="field-item"></li>
+            </ul>
+          </fieldset>
+        </div>
+      </section>
+      <section class="catalog"></section>
+      <section class="newsletter newsletter-catalog"></section>
+    </main>
+  </body>
 </html>
