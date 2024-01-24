@@ -182,7 +182,125 @@
           <button class="filter-button" type="reset">Сбросить</button>
         </div>
       </section>
-      <section class="catalog"></section>
+
+      <!-- каталог -->
+      <section class="catalog">
+        <div class="catalog-wrapper-filter">
+          <h2 class="catalog-title">Найдено гостиниц: 38</h2>
+          <select class="catalog-select">
+            <option class="select-item" value="cheap">Сначала дешевые</option>
+            <option class="select-item" value="expensive">
+              Сначала дорогие
+            </option>
+            <option class="select-item" value="popular">
+              Сначала популярные
+            </option>
+          </select>
+          <div class="catalog-wrapper-buttons">
+            <a
+              class="catalog-wrapper-button catalog-wrapper-button-current"
+              href="#"
+              ><span class="visually-hidden"
+                >Сформировать карточки в столбик</span
+              ></a
+            >
+            <a class="catalog-wrapper-button" href="#"
+              ><span class="visually-hidden"
+                >Сформировать по одной карточке с названием</span
+              ></a
+            >
+            <a class="catalog-wrapper-button" href="#"
+              ><span class="visually-hidden"
+                >Сформировать карточки в ряд</span
+              ></a
+            >
+          </div>
+        </div>
+        <ul class="catalog-list">
+          <li class="catalog-card">
+            <img
+              class="catalog-card-image"
+              src="#"
+              width="300"
+              height="212"
+              alt="Амара ресорт"
+            />
+            <h3 class="catalog-card-heading">Amara Resort & Spa</h3>
+            <div class="catalog-card-description">
+              <p class="catalog-card-text">Гостиница</p>
+              <p class="catalog-card-text">От 4000 ₽</p>
+            </div>
+            <a class="catalog-card-more-details" href="#">Подробнее</a>
+            <button class="catalog-card-favorites" type="button">
+              В избранное
+            </button>
+            <div class="catalog-card-stars"></div>
+            <div class="catalog-card-rating">Рейтинг: 8,5</div>
+          </li>
+          <li class="catalog-card">
+            <img
+              class="catalog-card-image"
+              src="#"
+              width="300"
+              height="212"
+              alt="Виллас ат посо диабло"
+            />
+            <h3 class="catalog-card-heading">Villas at Poco Diablo</h3>
+            <div class="catalog-card-description">
+              <p class="catalog-card-text">Гостиница</p>
+              <p class="catalog-card-text">От 5000 ₽</p>
+            </div>
+            <a class="catalog-card-more-details" href="#">Подробнее</a>
+            <button class="catalog-card-favorites" type="button">
+              В избранное
+            </button>
+            <div class="catalog-card-stars"></div>
+            <div class="catalog-card-rating">Рейтинг: 9,2</div>
+          </li>
+          <li class="catalog-card">
+            <img
+              class="catalog-card-image"
+              src="#"
+              width="300"
+              height="212"
+              alt="Десерт куаил ин"
+            />
+            <h3 class="catalog-card-heading">Desert Quail Inn</h3>
+            <div class="catalog-card-description">
+              <p class="catalog-card-text">Гостиница</p>
+              <p class="catalog-card-text">От 2500 ₽</p>
+            </div>
+            <a class="catalog-card-more-details" href="#">Подробнее</a>
+            <button class="catalog-card-favorites" type="button">
+              В избранное
+            </button>
+            <div class="catalog-card-stars"></div>
+            <div class="catalog-card-rating">Рейтинг: 6,9</div>
+          </li>
+          <li class="catalog-card">
+            <img
+              class="catalog-card-image"
+              src="#"
+              width="300"
+              height="212"
+              alt="Грин три ин"
+            />
+            <h3 class="catalog-card-heading">GreenTree Inn</h3>
+            <div class="catalog-card-description">
+              <p class="catalog-card-text">Гостиница</p>
+              <p class="catalog-card-text">От 1500 ₽</p>
+            </div>
+            <a class="catalog-card-more-details" href="#">Подробнее</a>
+            <button class="catalog-card-favorites" type="button">
+              В избранное
+            </button>
+            <div class="catalog-card-stars"></div>
+            <div class="catalog-card-rating">Рейтинг: 5,0</div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="pagination"></section>
       <section class="newsletter newsletter-catalog"></section>
     </main>
   </body>
