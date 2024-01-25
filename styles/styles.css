@@ -42,16 +42,39 @@ body {
   overflow: hidden;
 }
 
+/* шапка */
+.main-header {
+  display: flex;
+  box-sizing: border-box;
+  padding: 0 70px;
+}
+
+.header-logo {
+  display: block;
+  position: absolute;
+}
+
+/* навигация */
+.main-nav {
+  display: flex;
+  flex: 2 0 auto;
+}
+
 /* главная навигация */
 .site-list {
   margin: 0;
+  margin-left: 168px;
   padding: 0;
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  width: 530px;
 }
 
 .site-link {
   padding: 20px 16px;
+  display: block;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 20px;
   font-weight: 700;
@@ -63,7 +86,39 @@ body {
 /* пользовательская навигация */
 .user-list {
   margin: 0;
+  margin-left: auto;
   padding: 0;
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.user-item {
+  position: relative;
+}
+
+.user-item:nth-child(2) {
+  margin-right: 21px;
+}
+
+.user-link {
+  display: block;
+  padding: 22px 12px;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.user-button {
+  padding: 8px 32px;
+  background-color: #756157;
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: 160px;
+  text-align: center;
 }
