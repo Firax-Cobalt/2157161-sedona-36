@@ -86,11 +86,24 @@ body {
   line-height: 24px;
   text-decoration: none;
   color: rgba(0, 0, 0, 1);
+  position: relative;
 }
 
-/* .site-link-current {
+.site-link-current::after {
+  content: '';
+  display: block;
+  width: 68px;
+  height: 2px;
+  background-color: rgba(117, 98, 87, 1);
+  position: absolute;
+  bottom: -1px;
+  left: 16px;
+}
 
-} */
+.site-link-current-catalog::after {
+  width: 93px;
+}
+
 
 /* пользовательская навигация */
 .user-list {
