@@ -280,3 +280,39 @@ body {
   width: 651px;
   font: 400 22px/1.18 "PT Sans", Arial, sans-serif;
 }
+
+/* преимущество */
+.advantages-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.advantages-item {
+  padding: 103px 85px;
+  box-sizing: border-box;
+  width: 400px;
+  min-height: 385px;
+  background-color: rgba(130, 179, 211, 1);
+  text-align: center;
+}
+
+.advantages-item:nth-child(2),
+.advantages-item:nth-child(6) {
+  padding: 0;
+  width: 800px;
+  height: 385px;
+}
+
+.advantages-item-title {
+  font: 700 24px/1.16 "PT Sans" Arial, sans-serif;
+  text-transform: uppercase;
+  width: 175px;
+}
+
+.advantages-item-text {
+  font: 400 18px/1.16 "PT Sans" Arial, sans-serif;
+  width: 230px;
+}
