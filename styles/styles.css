@@ -597,6 +597,22 @@ body {
   box-sizing: border-box;
 }
 
+.social-link:hover svg path {
+  fill: rgba(104, 162, 202, 1);
+}
+
+.social-link:focus-visible {
+  outline: none;
+}
+
+.social-link:focus-visible svg path {
+  fill: rgba(104, 162, 202, 1);
+}
+
+.social-link:active svg path {
+  fill: rgba(104, 162, 202, 0.3);
+}
+
 /* номер телефона */
 .phone {
   display: block;
@@ -607,6 +623,20 @@ body {
   font-family: "PT Sans", Arial, sans-serif;
   text-decoration: none;
   color: rgba(0, 0, 0, 1);
+  transition: color 0.2s ease-in;
+}
+
+.phone:hover {
+  color: rgba(117, 97, 87, 1);
+}
+
+.phone:focus-visible {
+  outline: none;
+  color: rgba(117, 97, 87, 1);
+}
+
+.phone:active {
+  color: rgba(117, 97, 87, 0.3);
 }
 
 /* лого html-academy */
