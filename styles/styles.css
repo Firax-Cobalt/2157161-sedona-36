@@ -610,3 +610,7 @@ body {
 }
 
 /* лого html-academy */
+.html-academy-link {
+  display: block;
+  padding-top: 3px;
+}
