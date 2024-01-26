@@ -599,6 +599,8 @@ body {
 
 /* номер телефона */
 .phone {
+  display: block;
+  padding-left: 15px;
   font-weight: 400;
   font-size: 40px;
   line-height: 1;
