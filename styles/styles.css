@@ -378,6 +378,7 @@ body {
 /* комфорт */
 .comfort {
   padding-top: 63px;
+  padding-bottom: 63px;
 }
 
 .comfort-title {
@@ -399,4 +400,45 @@ body {
   font-size: 22px;
   line-height: 1.18;
   font-family: "PT Sans", Arial, sans-serif;
+}
+
+/* тип аспекта */
+.aspect-type-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.aspect-type-item {
+  padding: 80px 85px;
+  box-sizing: border-box;
+  width: 400px;
+  height: 385px;
+  background-color: rgba(131, 179, 211, 0.12);
+  position: relative;
+}
+
+.aspect-type-icon {
+  position: absolute;
+  top: 80px;
+  left: 165px;
+}
+
+.aspect-type-title {
+  margin: 0 auto;
+  padding-top: 105px;
+  font: 700 24px/1.16 "PT Sans", Arial, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+}
+
+.aspect-type-text {
+  margin: 0;
+  font: 400 18px/1.16 "PT Sans", Arial, sans-serif;
+  color: rgba(51, 51, 51, 1);
+  text-align: center;
+  width: 230px;
 }
