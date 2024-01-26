@@ -225,6 +225,7 @@ body {
   cursor: default;
 }
 
+/* для коричневой кнопки */
 .button--brown:hover {
   background-color: rgba(97, 80, 72, 1);
 }
@@ -237,6 +238,20 @@ body {
 .button--brown:focus-visible {
   outline: none;
   background-color: rgba(97, 80, 72, 1);
+}
+
+/* для голубой кнопки */
+.button--blue:hover {
+  background-color: rgba(104, 162, 202, 1);
+}
+
+.button--blue:focus-visible {
+  outline: none;
+  background-color: rgba(104, 162, 202, 1);
+}
+
+.button--blue:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 /* логотип седона */
@@ -449,6 +464,7 @@ body {
 /* заинтересовались? */
 .interested {
   padding-top: 97px;
+  padding-bottom: 96px;
 }
 
 .interested-title {
@@ -487,4 +503,74 @@ body {
   text-transform: uppercase;
   background-color: rgba(117, 97, 87, 1);
   border-radius: 4px;
+}
+
+/* рассылка */
+.newsletter--index {
+  background-color: lightblue;
+  padding-top: 96px;
+  padding-bottom: 105px;
+  background: url("../images/newsletter-background.jpg") no-repeat center;
+}
+
+.newsletter-title--index {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.2;
+  font-family: "PT Sans", Arial, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  width: 475px;
+}
+
+.newsletter-text--index {
+  margin: 0 auto 54px;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.18;
+  font-family: "PT Sans", Arial, sans-serif;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  width: 475px;
+}
+
+.newsletter-form {
+  display: flex;
+  margin: 0 auto;
+  width: 684px;
+}
+
+.newsletter-input {
+  width: 452px;
+  padding: 12px 20px;
+  border: none;
+  font-family: "PT Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.33;
+  color: rgba(0, 0, 0, 0.6);
+  border-radius: 4px 0 0 4px;
+  border-color: blue;
+}
+
+.newsletter-input:focus-visible {
+  outline: 2px solid rgba(0, 0, 0, 1);
+}
+
+.newsletter-submit {
+  padding: 8px 50px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.8;
+  font-family: "PT Sans", Arial, sans-serif;
+  color: rgba(255, 255, 255, 1);
+  text-transform: uppercase;
+  background-color: rgba(130, 179, 211, 1);
 }
