@@ -264,6 +264,7 @@ body {
 /* небольшой городок */
 .town {
   padding-top: 70px;
+  padding-bottom: 89px;
   text-align: center;
   box-sizing: border-box;
 }
@@ -291,12 +292,16 @@ body {
 }
 
 .advantages-item {
-  padding: 103px 85px;
+  padding: 114px 85px;
   box-sizing: border-box;
   width: 400px;
   min-height: 385px;
   background-color: rgba(130, 179, 211, 1);
   text-align: center;
+}
+
+.advantages-item:first-child {
+  padding: 103px 85px;
 }
 
 .advantages-item:nth-child(2),
@@ -306,13 +311,66 @@ body {
   height: 385px;
 }
 
+.advantages-item:nth-child(7) {
+  padding: 102px 85px;
+}
+
+.advantages-item:nth-child(3),
+.advantages-item:nth-child(5) {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item:nth-child(4) {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
 .advantages-item-title {
-  font: 700 24px/1.16 "PT Sans" Arial, sans-serif;
+  margin: 0 auto 61px;
+  font: 700 24px/1.16 "PT Sans", Arial, sans-serif;
   text-transform: uppercase;
   width: 175px;
+  position: relative;
+}
+
+.advantages-item:nth-child(7) .advantages-item-title {
+  width: 172px;
+}
+
+.advantages-item-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.3);
+  position: absolute;
+    left: 57px;
+    bottom: -31px;
+}
+
+.advantages-item:nth-child(3) .advantages-item-title::after,
+.advantages-item:nth-child(4) .advantages-item-title::after,
+.advantages-item:nth-child(5) .advantages-item-title::after {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.advantages-item:nth-child(1) .advantages-item-title,
+.advantages-item:nth-child(7) .advantages-item-title {
+  color: rgba(255, 255, 255, 1);
 }
 
 .advantages-item-text {
-  font: 400 18px/1.16 "PT Sans" Arial, sans-serif;
+  margin: 0 auto;
+  font: 400 18px/1.16 "PT Sans", Arial, sans-serif;
   width: 230px;
+}
+
+.advantages-item:nth-child(1) .advantages-item-text,
+.advantages-item:nth-child(7) .advantages-item-text {
+  color: rgba(255, 255, 255, 1);
+}
+
+.advantages-item:nth-child(3) .advantages-item-text,
+.advantages-item:nth-child(4) .advantages-item-text,
+.advantages-item:nth-child(5) .advantages-item-text {
+  color: rgba(51, 51, 51, 1);
 }
