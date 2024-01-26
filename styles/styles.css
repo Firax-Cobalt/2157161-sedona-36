@@ -415,9 +415,13 @@ body {
   padding: 80px 85px;
   box-sizing: border-box;
   width: 400px;
-  height: 385px;
+  min-height: 385px;
   background-color: rgba(131, 179, 211, 0.12);
   position: relative;
+}
+
+.aspect-type-item:nth-child(2n) {
+  background-color: rgba(255, 255, 255, 1);
 }
 
 .aspect-type-icon {
@@ -427,7 +431,7 @@ body {
 }
 
 .aspect-type-title {
-  margin: 0 auto;
+  margin: 0 auto 29px;
   padding-top: 105px;
   font: 700 24px/1.16 "PT Sans", Arial, sans-serif;
   text-transform: uppercase;
@@ -440,5 +444,4 @@ body {
   font: 400 18px/1.16 "PT Sans", Arial, sans-serif;
   color: rgba(51, 51, 51, 1);
   text-align: center;
-  width: 230px;
 }
