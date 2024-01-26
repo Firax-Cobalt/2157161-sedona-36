@@ -20,13 +20,14 @@ body {
   font-size: 18px;
   line-height: 21px;
   font-family: "PT Sans";
-  background-color: #f2f2f2;
+  background-color: rgba(242, 242, 242, 1);
 }
 
 .container {
   margin: 0 auto;
   width: 1200px;
   background-color: #ffffff;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.20);
 }
 
 .visually-hidden {
@@ -84,7 +85,7 @@ body {
   font-weight: 700;
   line-height: 24px;
   text-decoration: none;
-  color: #000000;
+  color: rgba(0, 0, 0, 1);
 }
 
 /* .site-link-current {
@@ -119,12 +120,28 @@ body {
   line-height: 20px;
   text-transform: uppercase;
   text-decoration: none;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 1);
+}
+
+.user-link-favorites {
+  position: relative;
+}
+
+.user-link-favorites::after {
+  content: '12';
+  display: block;
+  padding: 5px;
+  background-color: rgba(125, 181, 79, 1);
+  font: 400 10px/1 "PT Sans", Arial, sans-serif;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  right: 3px;
 }
 
 .user-button {
   padding: 8px 32px;
-  background-color: #756157;
+  background-color: rgba(117, 97, 87, 1);
   border-radius: 4px;
   box-sizing: border-box;
   width: 160px;
