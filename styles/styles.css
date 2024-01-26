@@ -260,3 +260,23 @@ body {
   bottom: 0;
   left: 0;
 }
+
+/* небольшой городок */
+.town {
+  padding-top: 70px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.town-title {
+  margin: 0 auto 25px;
+  width: 620px;
+  font: 700 30px/1.2 "PT Sans", Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+.town-text {
+  margin: 0 auto;
+  width: 651px;
+  font: 400 22px/1.18 "PT Sans", Arial, sans-serif;
+}
