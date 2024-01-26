@@ -53,6 +53,7 @@ body {
 .header-logo {
   display: block;
   position: absolute;
+  z-index: 2;
   transition: opacity 0.2s ease-in-out;
 }
 
@@ -90,6 +91,7 @@ body {
 
 .site-item {
   position: relative;
+  z-index: 2;
 }
 
 .site-link {
@@ -154,7 +156,7 @@ body {
 
 .user-link {
   display: block;
-  padding: 22px 12px;
+  padding: 20px 12px;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 16px;
   font-weight: 700;
@@ -235,4 +237,26 @@ body {
 .button-brown:focus-visible {
   outline: none;
   background-color: rgba(97, 80, 72, 1);
+}
+
+/* логотип седона */
+.sedona-logo {
+  padding-top: 51px;
+  width: 1200px;
+  height: 485px;
+  background: url("../images/sedona-logo-background.jpg") no-repeat center;
+  text-align: center;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+}
+
+.sedona-logo::after {
+  content: url("../images/sedona-logo-pattern.svg");
+  width: 100%;
+  height: 57px;
+  background-position: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
