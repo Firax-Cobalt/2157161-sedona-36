@@ -643,4 +643,31 @@ body {
 .html-academy-link {
   display: block;
   padding-top: 3px;
+  transition: fill 0.2s ease-in-out;
+}
+
+.html-academy-link svg path {
+  transition: fill 0.2s ease-in-out;
+}
+
+.html-academy-link:hover svg path {
+  fill: rgba(117, 97, 87, 1);
+}
+
+/* .html-academy-link:focus svg path {
+  outline: none;
+  fill: rgba(117, 97, 87, 1);
+} */
+
+.html-academy-link:focus-visible svg path {
+  outline: none;
+  fill: rgba(117, 97, 87, 1);
+}
+
+.html-academy-link:focus-visible {
+  outline: none;
+}
+
+.html-academy-link:active svg path {
+  fill: rgba(117, 97, 87, 0.3);
 }
