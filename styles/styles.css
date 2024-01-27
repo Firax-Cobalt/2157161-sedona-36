@@ -674,7 +674,7 @@ body {
 /* фильтр */
 .filter {
   padding: 38px 70px 35px;
-  background-color: #6398ba;
+  background: #6398ba url("../images/filter-background.jpg") no-repeat;
 }
 
 .filter-title {
@@ -759,6 +759,10 @@ body {
   margin-right: 72px;
 }
 
+.field-group:nth-child(2) {
+  margin-right: 150px;
+}
+
 .field-group-title {
   margin-bottom: 33px;
   padding: 0;
@@ -839,4 +843,45 @@ body {
 
 .field-input[type="radio"]:checked + .field-name--radio::after {
   display: block;
+}
+
+.range-wrapper-inputs {
+  margin: 0;
+  display: flex;
+  column-gap: 2px;
+}
+
+.range-label {
+  position: relative;
+}
+
+.range-input {
+  padding: 12px 43px 12px 20px;
+  border: none;
+  width: 143px;
+  box-sizing: border-box;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: inherit;
+  font-weight: 700;
+  line-height: 1.33;
+}
+
+.range-label:nth-child(1) .range-input {
+  border-radius: 4px 0 0 4px;
+}
+
+.range-label:nth-child(2) .range-input {
+  border-radius: 0 4px 4px 0;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+.range-price {
+  position: absolute;
+  top: 13px;
+  right: 20px;
+  color: rgba(0, 0, 0, 0.6);
 }
