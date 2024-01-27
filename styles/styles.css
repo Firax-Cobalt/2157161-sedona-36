@@ -677,6 +677,10 @@ body {
   background-color: #6398ba;
 }
 
+.filter-title {
+  margin-bottom: 39px;
+}
+
 /* заголовок фильтра */
 .inner-header {
   margin: 0;
@@ -738,4 +742,65 @@ body {
 
 .breadcrumbs-item:last-child .breadcrumbs-arrow {
   display: none;
+}
+
+/* форма фильтра */
+.filter-form {
+  display: flex;
+}
+
+.field-group {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.field-group-title {
+  margin-bottom: 33px;
+  padding: 0;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  font-family: "PT Sans", Arial, sans-serif;
+  color: rgba(255, 255, 255, 1);
+}
+
+.field-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.field-item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.field-label {
+  padding-left: 36px;
+  color: rgba(255, 255, 255, 1);
+  line-height: 1.27;
+  font-weight: 400;
+  font-family: "PT Sans", Arial, sans-serif;
+  position: relative;
+}
+
+.field-label--checkbox::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 4px;
+  position: absolute;
+}
+
+.field-label--checkbox::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 3px;
+  width: 15px;
+  height: 15px;
+  background: url("../images/checkbox-tick.svg") no-repeat center;
 }

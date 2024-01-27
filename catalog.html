@@ -142,125 +142,145 @@
           </div>
 
           <!-- форма фильтра -->
-          <form class="filter-form" method="post" action="#"></form>
+          <form class="filter-form" method="post" action="#">
+            <!-- инфраструктура -->
+            <fieldset class="field-group">
+              <legend class="field-group-title">Инфраструктура:</legend>
+              <ul class="field-list">
+                <li class="field-item">
+                  <label
+                    class="field-label field-label--checkbox"
+                    for="swimming-pool"
+                  >
+                    <input
+                      class="visually-hidden field-input"
+                      type="checkbox"
+                      name="swimming-pool"
+                      id="swimming-pool"
+                      checked
+                    />
+                    <span class="field-name field-name--checkbox">Бассейн</span>
+                  </label>
+                </li>
+                <li class="field-item">
+                  <label
+                    class="field-label field-label--checkbox"
+                    for="parking"
+                  >
+                    <input
+                      class="visually-hidden field-input"
+                      type="checkbox"
+                      name="parking"
+                      id="parking"
+                      checked
+                    />
+                    <span class="field-name field-name--checkbox"
+                      >Парковка</span
+                    >
+                  </label>
+                </li>
+                <li class="field-item">
+                  <label class="field-label field-label--checkbox" for="wi-fi">
+                    <input
+                      class="visually-hidden field-input"
+                      type="checkbox"
+                      name="wi-fi"
+                      id="wi-fi"
+                    />
+                    <span class="field-name field-name--checkbox">Wi-Fi</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
 
-          <!-- инфраструктура -->
-          <fieldset class="field-group">
-            <legend class="field-group-title">Инфраструктура:</legend>
-            <ul class="feild-list">
-              <li class="field-item">
-                <label class="field-label" for="swimming-pool">
-                  <input
-                    class="visually-hidden"
-                    type="checkbox"
-                    name="swimming-pool"
-                    id="swimming-pool"
-                    checked
-                  />
-                  Бассейн
-                </label>
-              </li>
-              <li class="field-item">
-                <label class="field-label" for="parking">
-                  <input
-                    class="visually-hidden"
-                    type="checkbox"
-                    name="parking"
-                    id="parking"
-                    checked
-                  />
-                  Парковка
-                </label>
-              </li>
-              <li class="field-item">
-                <label class="field-label" for="wi-fi">
-                  <input
-                    class="visually-hidden"
-                    type="checkbox"
-                    name="wi-fi"
-                    id="wi-fi"
-                  />
-                  Wi-Fi
-                </label>
-              </li>
-            </ul>
-          </fieldset>
+            <!-- тип жилья -->
+            <fieldset class="field-group">
+              <legend class="field-group-title">Тип жилья:</legend>
+              <ul class="field-list">
+                <li class="field-item">
+                  <label class="field-label" for="hotel"
+                    ><input
+                      class="visually-hidden"
+                      type="radio"
+                      name="housing"
+                      id="hotel"
+                      checked
+                    /><span class="field-name field-name--radio"
+                      >Гостиница</span
+                    ></label
+                  >
+                </li>
+                <li class="field-item">
+                  <label class="field-label" for="motel"
+                    ><input
+                      class="visually-hidden"
+                      type="radio"
+                      name="housing"
+                      id="motel"
+                    /><span class="field-name field-name--radio"
+                      >Мотель</span
+                    ></label
+                  >
+                </li>
+                <li class="field-item">
+                  <label class="field-label" for="apartments">
+                    <input
+                      class="visually-hidden"
+                      type="radio"
+                      name="housing"
+                      id="apartments"
+                    /><span class="field-name field-name--radio"
+                      >Апартаменты</span
+                    ></label
+                  >
+                </li>
+              </ul>
+            </fieldset>
 
-          <!-- тип жилья -->
-          <fieldset class="field-group">
-            <legend class="field-group-title">Тип жилья:</legend>
-            <ul class="feild-list">
-              <li class="field-item">
-                <label class="field-label" for="hotel"
-                  ><input
-                    class="visually-hidden"
-                    type="radio"
-                    name="housing"
-                    id="hotel"
-                    checked
-                  />Гостиница</label
-                >
-              </li>
-              <li class="field-item">
-                <label class="field-label" for="motel"
-                  ><input
-                    class="visually-hidden"
-                    type="radio"
-                    name="housing"
-                    id="motel"
-                  />Мотель</label
-                >
-              </li>
-              <li class="field-item">
-                <label class="field-label" for="apartments">
+            <!-- Стоимость -->
+            <fieldset class="field-group">
+              <legend class="field-group-title">Стоимость, ₽:</legend>
+              <p class="range-wrapper-inputs">
+                <label class="range-label" for="min-price">
                   <input
-                    class="visually-hidden"
-                    type="radio"
-                    name="housing"
-                    id="apartments"
-                  />Апартаменты</label
-                >
-              </li>
-            </ul>
-          </fieldset>
-
-          <!-- Стоимость -->
-          <fieldset class="field-group">
-            <legend class="field-group-title">Стоимость, ₽:</legend>
-            <p class="range-wrapper-inputs">
-              <label class="range-label" for="min-price">
-                <input
-                  class="range-input"
-                  type="number"
-                  value="0"
-                  placeholder="от"
-                  id="min-price"
-                />
-                <span class="range-price">от</span>
-              </label>
-              <label class="range-label" for="max-price">
-                <input
-                  class="range-input"
-                  type="number"
-                  value="9000"
-                  placeholder="до"
-                  id="max-price"
-                />
-                <span class="range-price">до</span>
-              </label>
-            </p>
-            <div class="range">
-              <div class="range-scale"></div>
-              <div class="range-bar">
-                <button class="range-toggle toggle-mix" type="button"></button>
-                <button class="range-toggle toggle-max" type="button"></button>
+                    class="range-input"
+                    type="number"
+                    value="0"
+                    placeholder="от"
+                    id="min-price"
+                  />
+                  <span class="range-price">от</span>
+                </label>
+                <label class="range-label" for="max-price">
+                  <input
+                    class="range-input"
+                    type="number"
+                    value="9000"
+                    placeholder="до"
+                    id="max-price"
+                  />
+                  <span class="range-price">до</span>
+                </label>
+              </p>
+              <div class="range">
+                <div class="range-scale"></div>
+                <div class="range-bar">
+                  <button
+                    class="range-toggle toggle-mix"
+                    type="button"
+                  ></button>
+                  <button
+                    class="range-toggle toggle-max"
+                    type="button"
+                  ></button>
+                </div>
               </div>
+            </fieldset>
+            <div class="filter-buttons">
+              <button class="filter-button" type="submit">Применить</button>
+              <button class="filter-button" type="reset">Сбросить</button>
             </div>
-          </fieldset>
-          <div class="filter-buttons">
-            <button class="filter-button" type="submit">Применить</button>
-            <button class="filter-button" type="reset">Сбросить</button>
-          </div>
+          </form>
         </section>
 
         <!-- каталог -->
