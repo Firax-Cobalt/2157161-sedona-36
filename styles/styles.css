@@ -668,3 +668,19 @@ body {
 .html-academy-link:active svg path {
   fill: rgba(117, 97, 87, 0.3);
 }
+
+/* КАТАЛОГ */
+
+.filter {
+  padding: 35px 70px;
+  background-color: #99c2dc;
+}
+
+.inner-header {
+  margin: 0;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 1.2;
+  font-family: "PT Sans", Arial, sans-serif;
+  color: rgba(255, 255, 255, 1);
+}
