@@ -257,7 +257,8 @@ body {
   padding-top: 51px;
   width: 1200px;
   height: 485px;
-  background: url("../images/sedona-logo-background.jpg") no-repeat center;
+  background: #99c2dc url("../images/sedona-logo-background.jpg") no-repeat
+    center;
   text-align: center;
   box-sizing: border-box;
   position: relative;
@@ -508,7 +509,8 @@ body {
   background-color: lightblue;
   padding-top: 96px;
   padding-bottom: 105px;
-  background: url("../images/newsletter-background.jpg") no-repeat center;
+  background: #93bedb url("../images/newsletter-background.jpg") no-repeat
+    center;
 }
 
 .newsletter-title--index {
@@ -653,11 +655,6 @@ body {
 .html-academy-link:hover svg path {
   fill: rgba(117, 97, 87, 1);
 }
-
-/* .html-academy-link:focus svg path {
-  outline: none;
-  fill: rgba(117, 97, 87, 1);
-} */
 
 .html-academy-link:focus-visible svg path {
   outline: none;
