@@ -901,6 +901,15 @@ body {
   font-size: inherit;
   font-weight: 700;
   line-height: 1.33;
+  background-color: rgba(242, 242, 242, 1);
+}
+
+.range-input:hover {
+  background-color: rgba(230, 230, 230, 1);
+}
+
+.range-input:focus-visible {
+  outline: 3px solid rgba(131, 179, 211, 1);
 }
 
 .range-label:nth-child(1) .range-input {
