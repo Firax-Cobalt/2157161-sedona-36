@@ -459,7 +459,90 @@
 
     <!-- модальное окно -->
     <div class="modal">
-      <div class="modal-content"></div>
+      <div class="modal-content">
+        <h1 class="modal-title">Поиск гостиницы в седоне</h1>
+        <button class="modal-button-close" type="button">
+          <svg
+            width="15"
+            height="15"
+            viewBox="0 0 15 15"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              id="Vector"
+              d="M14.4905 1.78288L13.1982 0.49057L7.49048 6.19826L1.78279 0.49057L0.490479 1.78288L6.19817 7.49057L0.490479 13.1983L1.78279 14.4906L7.49048 8.78288L13.1982 14.4906L14.4905 13.1983L8.78279 7.49057L14.4905 1.78288Z"
+              fill="black"
+            />
+          </svg>
+        </button>
+        <form class="modal-form" action="#">
+          <div class="modal-field">
+            <label class="modal-field-label" for="date-arrival">
+              <span class="modal-field-type">Дата заезда:</span>
+              <input
+                class="modal-field-input"
+                type="text"
+                id="date-arrival"
+                name="date-arrival"
+                value="27 апреля 2020"
+            /></label>
+            <p class="modal-field-description">
+              Мы не можем отправить вас в прошлое.
+            </p>
+          </div>
+          <div class="modal-field">
+            <label class="modal-field-label" for="date-of-departure"
+              ><span class="modal-field-type">Дата выезда:</span
+              ><input
+                class="modal-field-input"
+                type="text"
+                id="date-of-departure"
+                name="date-of-departure"
+                value="1 сентября 2023"
+            /></label>
+            <p class="modal-field-description">
+              На эти даты есть свободные номера. Пока есть.
+            </p>
+          </div>
+          <div class="modal-wrapper-quantity">
+            <div class="modal-fields-wrapper">
+              <label for="adults" class="modal-field-label">Взрослые:</label>
+              <div class="modal-content-quantity">
+                <button
+                  class="button-quantity button-put-away"
+                  type="button"
+                ></button>
+                <input
+                  class="modal-field-quantity"
+                  type="number"
+                  value="2"
+                  id="adults"
+                  name="adults"
+                />
+                <button class="button-quantity button-add"></button>
+              </div>
+            </div>
+            <div class="modal-fields-wrapper">
+              <label for="children" class="modal-field-label">Дети:</label>
+              <div class="modal-content-quantity">
+                <button
+                  class="button-quantity button-put-away"
+                  type="button"
+                ></button>
+                <input
+                  class="modal-field-quantity"
+                  type="number"
+                  value="2"
+                  id="children"
+                  name="children"
+                />
+                <button class="button-quantity button-add"></button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
   </body>
 </html>
