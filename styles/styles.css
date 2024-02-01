@@ -1329,6 +1329,10 @@ body {
   z-index: 5;
 }
 
+.modal--closed {
+  display: none;
+}
+
 .modal-content {
   margin: auto;
   padding: 64px 70px;
@@ -1372,11 +1376,20 @@ body {
   margin-bottom: 25px;
 }
 
+.modal-field:nth-child(2) {
+  margin-bottom: 21px;
+}
+
 .modal-field-label {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 20px;
   line-height: 1.2;
   font-weight: 700;
+}
+
+.modal-field-label--children {
+  display: flex;
+  margin-right: 46px;
 }
 
 .modal-field-type {
@@ -1418,6 +1431,21 @@ body {
 
 .modal-fields-wrapper {
   display: flex;
+  align-items: center;
+}
+
+.modal-fields-wrapper:nth-child(2) {
+  margin-left: auto;
+}
+
+.modal-fields-wrapper:nth-child(1) .modal-quantity-label {
+  display: block;
+  margin-right: 46px;
+}
+
+.modal-fields-wrapper:nth-child(2) .modal-quantity-label {
+  display: block;
+  margin-right: 11px;
 }
 
 .modal-content-quantity {
@@ -1426,15 +1454,62 @@ body {
 }
 
 .button-quantity {
+  border: none;
   position: relative;
-  background-color: rgba(117, 97, 87, 0.3);
+  background-color: rgba(242, 242, 242, 1);
   padding: 0;
   cursor: pointer;
   width: 40px;
 }
 
+.button-put-away {
+  border-radius: 4px 0 0 4px;
+}
+
+.button-put-away svg {
+  position: absolute;
+  top: 23px;
+  left: 13px;
+}
+
+.button-add {
+  border-radius: 0 4px 4px 0;
+}
+
+.button-add svg {
+  position: absolute;
+  top: 17px;
+  left: 13px;
+}
+
 .modal-field-quantity {
+  padding: 10px 10px;
+  box-sizing: border-box;
+  border: none;
   width: 31px;
-  background-color: rgba(255, 255, 255, 1);
+  background-color: rgba(242, 242, 242, 1);
   appearance: none;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.11;
+}
+
+.modal-field-quantity::-webkit-outer-spin-button,
+.modal-field-quantity::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+.quantity-container-info {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: rgba(131, 179, 211, 1);
+  position: relative;
+}
+
+.info-icon {
+  position: absolute;
+  top: 7px;
+  left: 12px;
 }
