@@ -1542,7 +1542,12 @@ body {
 
 .modal-field-quantity::-webkit-outer-spin-button,
 .modal-field-quantity::-webkit-inner-spin-button {
+  -webkit-appearance: none;
   appearance: none;
+}
+
+.modal-field-quantity[type="number"] {
+  -moz-appearance: textfield;
 }
 
 .modal-field-quantity:focus-visible {
