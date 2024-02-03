@@ -1427,6 +1427,7 @@ body {
 
 .modal-wrapper-quantity {
   display: flex;
+  margin-bottom: 49px;
 }
 
 .modal-fields-wrapper {
@@ -1515,12 +1516,23 @@ body {
 }
 
 .quantity-info-description {
+  width: 256px;
+  min-height: 152px;
   position: absolute;
+  top: 41px;
+  left: -116px;
 }
 
-.quantity-info-description {
+.quantity-info-description::before {
+  content: url("../images/modal-quntity-triangle.svg");
+  position: absolute;
+  top: -18px;
+  left: 119px;
+}
+
+.quantity-info-description-text {
   margin: 0;
-  padding: 0;
+  padding: 20px 18px 18px 22px;
   font-weight: 400;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 16px;
@@ -1529,4 +1541,22 @@ body {
   width: 256px;
   min-height: 143px;
   background-color: rgba(51, 51, 51, 1);
+  border-radius: 10px;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 8px;
+  left: 0;
+}
+
+.button-modal-submit {
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  min-height: 60px;
+  background-color: rgba(131, 179, 211, 1);
+  color: rgba(255, 255, 255, 1);
+  text-transform: uppercase;
+  font: 700 20px/1.2 "PT Sans", Arial, sans-serif;
+  border-radius: 10px;
 }
