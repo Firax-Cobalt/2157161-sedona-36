@@ -1368,6 +1368,19 @@ body {
   right: 52px;
 }
 
+.modal-button-close:hover {
+  background-color: rgba(230, 230, 230, 1);
+}
+
+.modal-button-close:focus-visible {
+  outline: 3px solid rgba(131, 179, 211, 1);
+  background-color: rgba(230, 230, 230, 1);
+}
+
+.modal-button-close:active svg path {
+  fill: rgba(0, 0, 0, 0.3);
+}
+
 .modal-field {
   margin: 0;
 }
@@ -1412,6 +1425,15 @@ body {
   background-image: url("../images/modal-calendar.svg");
   background-repeat: no-repeat;
   background-position: top 16px right 22px;
+}
+
+.modal-field-input:hover {
+  background-color: rgba(230, 230, 230, 1);
+}
+
+.modal-field-input:focus-visible {
+  outline: 3px solid rgba(131, 179, 211, 1);
+  background-color: rgba(230, 230, 230, 1);
 }
 
 .modal-field-description {
@@ -1463,6 +1485,28 @@ body {
   width: 40px;
 }
 
+.button-quantity:hover svg path {
+  fill: rgba(0, 0, 0, 1);
+  fill-opacity: 1;
+}
+
+.button-quantity:focus-visible {
+  outline: none;
+}
+
+.button-quantity:focus-visible svg {
+  fill: rgba(0, 0, 0, 1);
+  fill-opacity: 1;
+  border-radius: 4px;
+  outline: 3px solid rgba(131, 179, 211, 1);
+  outline-offset: 3px;
+}
+
+.button-quantity:active svg path {
+  fill: rgba(0, 0, 0, 1);
+  fill-opacity: 0.3;
+}
+
 .button-put-away {
   border-radius: 4px 0 0 4px;
 }
@@ -1499,6 +1543,10 @@ body {
 .modal-field-quantity::-webkit-outer-spin-button,
 .modal-field-quantity::-webkit-inner-spin-button {
   appearance: none;
+}
+
+.modal-field-quantity:focus-visible {
+  outline: none;
 }
 
 .quantity-container-info {
